@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +11,55 @@
 
     <title>Blog section</title>
 </head>
+
 <body>
 
     <!-- navbar start -->
-    <header>
+    <header class="sticky top-0">
         <nav class="px-20 py-4 bg-[rgb(249,247,243)]">
-            <div class=" lg:flex justify-between items-center">
+            <div class="flex justify-start lg:justify-between items-center gap-x-3">
 
-                <a href="index.html" class="btn bg-[rgb(180,244,97)] text-xl">Home</a>
-                <p class="font-bold text-2xl">Donate Bangladesh</p>
-                <p class=" text-xl"><img src="./assets/coin.png" alt=""><span id="account-balance" class="font-bold">5200.00</span>BDT</p>
+                <a href="index.html" class="btn bg-[rgb(180,244,97)] text-lg  font-semibold lg:text-xl">Home</a>
+                <p class="font-bold text-lg lg:text-2xl">Donate Bangladesh</p>
+                <p class="text-lg lg:text-xl flex gap-x-1 lg:gap-x-2"><img src="./assets/coin.png" alt=""> <span id="account-balance" class="font-bold">5200.00</span> BDT</p>
             </div>
         </nav>
     </header>
+<!-- navbar end -->
 
-    <div class="collapse collapse-plus">
-        <input type="radio" name="my-accordion-2" checked="checked" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+ <!-- faq start -->
+    <div class="w-4/5 mx-auto py-12">
+        <div class="collapse collapse-plus bg-blue-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming API for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+            </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-plus bg-blue-200 my-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>The simplest and fastest way to select a single DOM element with JavaScript is by using its ID attribute. An ID is a unique identifier that I can assign to any HTML element using the id attribute.</p>
+            </div>
         </div>
-      </div>
-      <div class="collapse collapse-arrow bg-base-200">
-        <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-        <div class="collapse-content">
-          <p>hello</p>
+        <div class="collapse collapse-plus bg-blue-200 my-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation refers to the process of using event propagation or bubbling to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            </div>
         </div>
-      </div>
+        <div class="collapse collapse-plus bg-blue-200 my-2">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>I can manipulate an element attributes by using the setAttribute() method. The setAttribute() method accepts two arguments. Also I can style an element by using getElementById() method. There we can add .styles and the name of the attribute name.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
